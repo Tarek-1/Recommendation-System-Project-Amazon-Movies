@@ -22,7 +22,3 @@ The notebook explores collaborative filtering, content-based and hybrid techniqu
 You can view or run the notebook using [Google Colab](https://colab.research.google.com/).  
 Simply click the **"Open in Colab"** button at the top of the notebook on GitHub.
 
-## Author
-
-Tarek ([@Tarek-1](https://github.com/Tarek-1))
-
