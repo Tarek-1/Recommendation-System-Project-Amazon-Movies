@@ -28,7 +28,7 @@ This notebook implements a robust content-based recommendation engine using deep
 # Data Sources
 - Spotify Audio Features (Kaggle)
 
-- Genius Lyrics with Language Info (Kaggle)
+- Genius Lyrics (Kaggle)
 
 - lyrics.ovh API
 
