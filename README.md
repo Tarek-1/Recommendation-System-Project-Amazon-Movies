@@ -1,24 +1,37 @@
-# Recommendation System Project
+# Deep Content-Based Music Recommendation System (Audio + Lyrics)
+This project demonstrates a music recommendation system built in Python, combining audio features and lyrics embeddings for over 130,000 songs.
 
-This project demonstrates a basic recommendation system built using Python and Google Colab.
+Overview
+This notebook implements a robust content-based recommendation engine using deep learning (autoencoder) and modern NLP (Sentence Transformers) to create rich song embeddings. It is designed to recommend songs even when some tracks are missing lyrics or metadata.
 
-## Overview
+# Key steps include:
 
-The notebook explores collaborative filtering, content-based and hybrid techniques for building a recommendation engine. It includes:
-- Data loading and preprocessing
-- Models building
-- Evaluation metrics and discussion
+- Collecting and merging audio features (from Spotify datasets) and lyrics (from lyrics.ovh API and Genius/Kaggle datasets)
 
-## Tools Used
+- Engineering a unified feature set: audio features, dense lyrics embedding, and a has_lyrics flag
 
-- Python
-- Pandas, NumPy
-- Scikit-learn
-- PyTorch
+- Training an autoencoder neural network to learn compressed, information-rich song representations
+
+- Recommending similar songs based on cosine similarity in the learned embedding space
+
+# Tools Used
+- Python (pandas, NumPy)
+
+- scikit-learn
+
+- TensorFlow / Keras
+
+- sentence-transformers
+
 - Google Colab
 
-## How to View
+# Data Sources
+- Spotify Audio Features (Kaggle)
 
-You can view or run the notebook using [Google Colab](https://colab.research.google.com/).  
-Simply click the **"Open in Colab"** button at the top of the notebook on GitHub.
+- Genius Lyrics with Language Info (Kaggle)
 
+- lyrics.ovh API
+
+# How to View
+You can open or run the notebook in Google Colab.
+Just click the "Open in Colab" badge or button at the top of the GitHub notebook page.
